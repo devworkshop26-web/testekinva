@@ -125,7 +125,7 @@ export const AuditOverlay: React.FC<AuditOverlayProps> = ({ isOpen, onClose, onC
                        <Check className="w-5 h-5 text-brand-teal" /> On sauvegarde vos contrats à vie.
                     </li>
                     <li className="flex items-center gap-4 text-slate-300 font-bold">
-                       <Check className="w-5 h-5 text-brand-teal" /> On prépare votre croissance (3 -> 100).
+                       <Check className="w-5 h-5 text-brand-teal" /> On prépare votre croissance (3 -&gt; 100).
                     </li>
                  </ul>
               </div>
