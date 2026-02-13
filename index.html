@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth snap-y snap-mandatory">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinva | IT & AI Solutions Madagascar</title>
+    <meta property="og:title" content="Kinva | IT & AI Solutions Madagascar" />
+    <meta property="og:description" content="Opérateur IT & IA pour les entreprises à Madagascar. Web, Systèmes, IA et Formation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                900: '#0c4a6e',
+              },
+              slate: {
+                800: '#1e293b',
+                900: '#0f172a', 
+              },
+              // Brand colors from Logo
+              brand: {
+                coral: '#FF6B6B', // The 'S' or dots
+                purple: '#8B5CF6', // The 'y'
+                teal: '#14B8A6',   // The 'n'
+              },
+              accent: {
+                light: '#5eead4',
+                DEFAULT: '#14B8A6', // Using the Teal from the logo as the main action color
+                dark: '#0f766e',
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-padding-top: 0px;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        /* Strict snap mandatory for jump effect */
+        scroll-snap-type: y mandatory; 
+      }
+      /* Hide scrollbar for clean look but keep functionality */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2"
+  }
+}
+</script>
+</head>
+  <body class="bg-white text-slate-900 antialiased selection:bg-accent selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
